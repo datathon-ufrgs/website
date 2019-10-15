@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Exemplos de propostas e Links Interessantes</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img id="logo" style="width: 34px" src="Logo_dthon_navbar.jpg" /></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Início
+  </a>
+</li>
+<li>
+  <a href="programa.html">
+    <span class="fa fa-calendar"></span>
+     
+    Programa
+  </a>
+</li>
+<li>
+  <a href="links.html">
+    <span class="fa fa-box-open"></span>
+     
+    Propostas
+  </a>
+</li>
+<li>
+  <a href="regras.html">
+    <span class="fa fa-book"></span>
+     
+    Regras
+  </a>
+</li>
+<li>
+  <a href="local.html">
+    <span class="fa fa-map-marker-alt"></span>
+     
+    Local
+  </a>
+</li>
+<li>
+  <a href="resultados2018.html">
+    <span class="fa fa-trophy"></span>
+     
+    Resultados 2018
+  </a>
+</li>
+<li>
+  <a href="galeriafotos2018.html">
+    <span class="fa fa-camera-retro"></span>
+     
+    Galeria de Fotos 2018
+  </a>
+</li>
+<li>
+  <a href="about.html">
+    <span class="fa fa-info"></span>
+     
+    Sobre
+  </a>
+</li>
+<li>
+  <a href="news.html">
+    <span class="fa fa-newspaper"></span>
+     
+    News
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="http://github.com/datathon-ufrgs">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Exemplos de propostas e Links Interessantes</h1>
+
+</div>
+
+
+<div class="figure">
+<img src="brainstorm.png" style="width:20.0%" />
+
+</div>
+<p> </p>
+<p>Exemplos de Propostas:</p>
+<p><strong>Proposta 1</strong><br />
+Tema: <em>Visualização interativa - infografico</em><br />
+Descrição: <em>Série temporal das pesquisas mostrando eventos eleitorais importantes (prisão de Lula, impugnação cadidatura Lula, tentativa homicídio Bolsonaro, Anúncio Haddad, …) e resultado final do primeiro turno.</em><br />
+Discussão: <em>Devemos usar pesquisas para prever o resultados das eleições?</em></p>
+<p><strong>Proposta 2</strong><br />
+Tema: <em>Web scrapping</em><br />
+Descrição: <em>Gráficos com resultados de pesquisa (ou nuvens de palavras) com dados de paginas de redes sociais…</em><br />
+Discussão: <em>Como utilizar pesquisas em redes sociais como termômetro da intenção de votos da população?</em> <!-- (Prof. william Barros da UFPel lançou uma enquete em sua página, como melhorar as estimativas obtidas nesse caso?) --></p>
+<p><strong>Proposta 3</strong><br />
+Tema: <em>Visualização com dados de área</em><br />
+Descrição: <em>Mapas de variáveis sócio-econômicas, demográficas e percentuais de votos obtidos na eleição.</em><br />
+Discussão: <em>Quais informações dos eleitores podem ser importantes para explicar os percentuais de votos obtidos no primeiro turno?</em><br />
+<!-- (variaveis individuais e de contexto?)  --></p>
+<p><strong>Proposta 4</strong><br />
+Tema: <em>Online predictions</em><br />
+Descrição: <em>Aplicativo para coleta de informações e visualização de resultados em tempo real.</em><br />
+Discussão: <em>Pooling in real time?</em></p>
+<p> </p>
+<p>Veja abaixo alguns exemplos de visualização de dados eleitorais através do software R:</p>
+<ul>
+<li><p>Gráficos Nova Zelândia 2017 - <a href="http://freerangestats.info/blog/2017/10/07/election-results" target="_blank">Free range statistics blog</a></p></li>
+<li><p>Gráficos Austrália 2016 - <a href="https://robjhyndman.com/hyndsight/eechidna/" target="_blank">Rob J. Hyndman blog</a></p></li>
+<li><p>Combinação de Pesquisas no Brasil - <a href="http://www.pollingdata.com.br/" target="_blank">Poolingdata</a></p></li>
+<li><p>Mais combinação de Pesquisas no Brasil - <a href="https://data.jota.info/agregador/" target="_blank">Agregador JOTA de pesquisas eleitorais</a></p></li>
+<li><p>Ainda mais combinação no Brasil - <a href="https://www.poder360.com.br/pesquisas-de-opiniao/" target="_blank">Agregador de Pesquisas Poder 360</a></p></li>
+<li><p>Pacote R para obtenção de dados do TSE - <a href="http://curso-r.com/blog/2018/05/30/2018-05-30-pesqele/" target="_blank">Pacote pesqEle</a> (<a href="https://rpubs.com/conre3/pesqEle" target="_blank">artigo</a>)</p></li>
+</ul>
+<p> </p>
+<p>Matérias em jornais:</p>
+<ul>
+<li><p><a href="https://gauchazh.clicrbs.com.br/politica/eleicoes/noticia/2018/09/sites-e-apps-ajudam-na-escolha-dos-candidatos-cjlwlh2oy023w01mnp1sn1n53.html" target="_blank">Matéria na Zero Hora sobre Apps eleitorais</a></p></li>
+<li><p><a href="https://www.nytimes.com/interactive/2018/upshot/elections-polls.html?rref=collection%2Fsectioncollection%2Fupshot&amp;action=click&amp;contentCollection=upshot&amp;region=rank&amp;module=package&amp;version=highlights&amp;contentPlacement=4&amp;pgtype=sectionfront" target="_blank">NYTimes real time pooling</a></p></li>
+</ul>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+---
+title: "News"
+---
+<style>
+  .col2 {
+    columns: 2 200px;         /* number of columns and width in pixels */
+    -webkit-columns: 2 200px; /* chrome, safari */
+    -moz-columns: 2 200px;    /* firefox */
+  }
+  .col3 {
+    columns: 3 100px;
+    -webkit-columns: 3 100px;
+    -moz-columns: 3 100px;
+  }
+</style>
+
+![](no-fake-news.jpg){width=20%} 
+
+
+
+&nbsp;
+&nbsp;
+
+* **Ihaka Lecture Series** - Série de seminários em homenagem a Ross Ihaka, um dos criadores da linguagem R. Esse ano o título da série de seminários é "Rise of the machine learners - Statistical learning in the computational era". Visite https://www.stat.auckland.ac.nz/en/about/our-department/ihaka-lectures.html ; em 18/03/2019.
+
+&nbsp;
+
+* **Statsketball 2019** - Competição para estudantes do ensino médio e de graduação sobre o uso da Estatística para predição de resultados da liga de basquete norte americana NCAA. Informações em https://thisisstatistics.org/home-2/statsketball/ ; em 24/02/2019.
+
+&nbsp;
+
+* "**Maratona de Dados** - Evento desafia estudantes e coloca em evidência a importância da aprendizagem ativa". Matéria no Jornal da UFRGS sobre a primeira edição do Datathon - https://www.ufrgs.br/jornal/maratona-de-dados/ ; em 01/02/2019.
+
+&nbsp;
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Esta obra está licenciada com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional</a>.

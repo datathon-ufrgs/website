@@ -1,0 +1,40 @@
+---
+title: "Regulamento"
+---
+
+![](rules.jpg){width=13%}
+
+&nbsp;
+
+Algumas __regras__ iniciais:  
+
+* As soluções deverão ser apresentadas em softwares livres e código aberto, sendo que 
+oficinas do software R serão realizadas no cronograma de atividades do evento. 
+
+* Será permitida a inscrição individual ou em equipes de no máximo quatro integrantes. As
+três melhores soluções receberão premiação.
+
+* Até as 02pm do dia 15/10 as propostas devem ser entregues à comissão organizadora.
+
+* Aproveitar o ambiente criado para ter uma ótima experiência na resolução de problemas reais complexos!!!
+
+* ...mais sobre o regulamento em breve...  
+
+&nbsp;
+
+As __propostas__ devem abranger: 
+
+  1. Descrição do problema (descrever os dados eleitorais a serem utilizados);
+  
+  2. Especificação dos objetivos da proposta;
+  
+  3. Breve detalhamento da extração dos dados; 
+  
+  4. Possíveis técnicas estatísticas empregadas na análise dos dados;
+  
+  5. Pacotes do R que provavelmente serão utilizados;
+  
+  6. Breve descrição do produto final desejado.
+
+_Template para propostas:_ [.pdf](Propostas_template.pdf) 
+<!-- [.Rmd](#Propostas_template.Rmd) -->

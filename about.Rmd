@@ -1,0 +1,58 @@
+---
+title: "Sobre o Datathon UFRGS"
+---
+<style>
+  .col2 {
+    columns: 2 200px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 200px; /* chrome, safari */
+    -moz-columns: 2 200px;    /* firefox */
+  }
+  .col3 {
+    columns: 3 100px;
+    -webkit-columns: 3 100px;
+    -moz-columns: 3 100px;
+  }
+</style>
+
+&nbsp;
+
+<div class="col2">
+
+&nbsp;
+
+O __Datathon UFRGS__ é um espaço pensado por alunos e professores do Departamento de Estatística da UFRGS 
+para reunirmos tecnologia e inovação com problemas reais complexos e pessoas criativas interessadas em resolvê-los. 
+
+A palavra _Datathon_ é composta pelos termos _data_ (dados) e _thon_, de _marathon_ (maratona). 
+_Datathon_ é uma competição em que os participantes buscam desenvolver soluções, desde a coleta até a sua análise, para um grande volume de dados disponível. 
+
+O evento consisite em trocas de conhecimentos e informações entre os organizadores, 
+estudantes e profissionais de diversas áreas do conhecimento, e de diferentes níveis de 
+programação computacional. Esperamos criar um ambiente criativo para discussão de 
+soluções técnológicas a problemas de obtenção e análise de dados.
+
+&nbsp;
+
+![](Logo_dthon3.jpg){width=60%}
+</div>
+
+&nbsp;
+
+Se você acha que pode colaborar conosco de alguma forma na realização desse evento, junte-se a nós!  
+Contact us: datathon.ufrgs@gmail.com  
+
+&nbsp;
+
+__Comissão Organizadora do 1º Datathon UFRGS__  
+
+* ![](p1.jpg){width=8%} Profa. Márcia Barbian  
+
+* ![](p2.jpg){width=8%} Prof. Markus Stein  
+
+* ![](p3.jpg){width=8%} Prof. Rodrigo dos Reis  
+
+* ![](p4.jpg){width=8%} Profa. Silvana Schneider
+
+
+
+

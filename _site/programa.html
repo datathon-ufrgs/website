@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Programação</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img id="logo" style="width: 34px" src="Logo_dthon_navbar.jpg" /></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Início
+  </a>
+</li>
+<li>
+  <a href="programa.html">
+    <span class="fa fa-calendar"></span>
+     
+    Programa
+  </a>
+</li>
+<li>
+  <a href="links.html">
+    <span class="fa fa-box-open"></span>
+     
+    Propostas
+  </a>
+</li>
+<li>
+  <a href="regras.html">
+    <span class="fa fa-book"></span>
+     
+    Regras
+  </a>
+</li>
+<li>
+  <a href="local.html">
+    <span class="fa fa-map-marker-alt"></span>
+     
+    Local
+  </a>
+</li>
+<li>
+  <a href="resultados2018.html">
+    <span class="fa fa-trophy"></span>
+     
+    Resultados 2018
+  </a>
+</li>
+<li>
+  <a href="galeriafotos2018.html">
+    <span class="fa fa-camera-retro"></span>
+     
+    Galeria de Fotos 2018
+  </a>
+</li>
+<li>
+  <a href="about.html">
+    <span class="fa fa-info"></span>
+     
+    Sobre
+  </a>
+</li>
+<li>
+  <a href="news.html">
+    <span class="fa fa-newspaper"></span>
+     
+    News
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="http://github.com/datathon-ufrgs">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Programação</h1>
+
+</div>
+
+
+<style>
+  .col2 {
+    columns: 2 200px;         /* number of columns and width in pixels */
+    -webkit-columns: 2 200px; /* chrome, safari */
+    -moz-columns: 2 200px;    /* firefox */
+  }
+  .col3 {
+    columns: 3 100px;
+    -webkit-columns: 3 100px;
+    -moz-columns: 3 100px;
+  }
+</style>
+<div class="figure">
+<img src="data-entry.jpg" style="width:20.0%" />
+
+</div>
+<p> </p>
+<p>Em sua primeira edição, o <strong>Datathon UFRGS</strong> ocorrerá em parceria com a Semana Acadêmica da Estatística <a href="http://www.ufrgs.br/semanistica" target="_blank">(Semanística)</a>. As atividades programadas para o turno da manhã serão realizadas conjuntamente entre os eventos.</p>
+<p>Convidamos os interessados em participar das demais atividades da Semanística a se inscreverem no Datathon UFRGS através da <a href="https://docs.google.com/forms/d/e/1FAIpQLSeArSz8umdJAAPh-Dv_ylawHZ8Tx_p96-57RJNR6MY_vTGXLg/viewform?c=0&amp;w=1" target="_blank">página de inscrições da Semanística</a>. (Nesse caso não há necessidade de se inscrever através da página do Datathon)</p>
+<p>Inscrições para participação somente no <strong>1º Datathon da UFRGS</strong> devem ser realizadas <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkqNJn-8DCuekpgGutO0j-3FtIKdpxQTpqngTE0HfmH1fE-w/viewform" target="_blank">aqui</a>.</p>
+<p> </p>
+<p>A <strong>programação</strong> do <strong>1º Datathon UFRGS</strong> será composta por:</p>
+<table style="width:85%;">
+<colgroup>
+<col width="12%" />
+<col width="25%" />
+<col width="22%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Horário</th>
+<th>Segunda (15/10)</th>
+<th>Terça (16/10)</th>
+<th>Quarta (17/10)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>08:00 as 10:30</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>coffe-break</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>11:00 as 12:30</td>
+<td><a href="#oficina1"><em>Oficina 1*</em></a> <a href="#oficina1"><img src="novacancy.gif" style="width:20.0%" /></a> <em>e Apresentação do problema</em></td>
+<td></td>
+<td><em>Apresentação de soluções e Premiação*</em></td>
+</tr>
+<tr class="even">
+<td>Lunch</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>13:00 as 14:00</td>
+<td><em>Entrega das propostas</em></td>
+<td><em>Relato de andamento</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>14:00 as 15:30</td>
+<td><em>Maratona</em></td>
+<td><em>Maratona</em></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>coffe-break</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>16:00 as 16:30</td>
+<td><a href="#oficina2"><em>Oficina 2</em></a></td>
+<td><a href="#oficina3"><em>Oficina 3</em></a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>16:30 as 18:00</td>
+<td><em>Maratona</em></td>
+<td><em>Maratona</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>*Atividades em conjunto com a Semanística.</p>
+<p> </p>
+<div id="oficina-1" class="section level3">
+<h3>Oficina 1 <a id="oficina1"></a> <img src="novacancy.gif" style="width:15.0%" /></h3>
+<p><em>* Agradecemos o interesse de todos, mas devido ao número limitado de vagas não conseguiremos garantir vaga na Oficina 1 para novas inscrições. Uma lista de espera será formada e em caso de enventuais desistências chamaremos os próximos inscritos. Para as demais atividades a vaga estará garantida.</em></p>
+<p><strong>Título</strong>: <em>Pintando e bordando no R: ggplot2 e Rmarkdown</em><br />
+<strong>Palestrante</strong>: <em>Prof. Rodrigo C. P. dos Reis</em><br />
+Arquivos da apresentação: <a href="arquivos_oficina1.zip">.zip</a></p>
+<p> </p>
+</div>
+<div id="oficina-2" class="section level3">
+<h3>Oficina 2 <a id="oficina2"></a></h3>
+<p><strong>Título</strong>: <em>Web Scrapping, Web Services e API’s - Extraindo dados através do R</em><br />
+<strong>Palestrante</strong>: <em>Lucas Godoy (Doutorando em Estatística pela UFMG)</em></p>
+<p> </p>
+</div>
+<div id="oficina-3" class="section level3">
+<h3>Oficina 3 <a id="oficina3"></a></h3>
+<p><strong>Título</strong>: <em>MapeaR: descomplicando a construção de mapas no R</em><br />
+<strong>Palestrante</strong>: <em>Luís G. Silva e Silva (Pós doutorado pela UFMG)</em><br />
+Arquivos da apresentação: <a href="datathon-spatial-v02.zip">.zip</a></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

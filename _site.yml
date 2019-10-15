@@ -1,0 +1,34 @@
+name: "my-website"
+navbar:
+  title: "<img id=\"logo\" style=\"width: 34px\" src=\"Logo_dthon_navbar.jpg\" />"
+  left:
+    - text: "Início"
+      href: index.html
+      icon: fa-home
+    - text: "Programa"
+      href: programa.html
+      icon: fa-calendar
+    - text: "Propostas"
+      href: links.html
+      icon: fa-box-open
+    - text: "Regras"
+      href: regras.html
+      icon: fa-book
+    - text: "Local"
+      href: local.html
+      icon: fa-map-marker-alt
+    - text: "Resultados 2018"
+      href: resultados2018.html
+      icon: fa-trophy
+    - text: "Galeria de Fotos 2018"
+      href: galeriafotos2018.html
+      icon: fa-camera-retro
+    - text: "Sobre"
+      href: about.html
+      icon: fa-info
+    - text: "News"
+      href: news.html
+      icon: fa-newspaper
+  right:
+    - icon: fa-github fa-lg
+      href: http://github.com/datathon-ufrgs

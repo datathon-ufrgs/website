@@ -1,0 +1,55 @@
+---
+title: "Exemplos de propostas e Links Interessantes"
+---
+![](brainstorm.png){width=20%}
+
+&nbsp;
+
+Exemplos de Propostas:  
+
+__Proposta 1__  
+Tema: _Visualização interativa - infografico_  
+Descrição: _Série temporal das pesquisas mostrando eventos eleitorais importantes (prisão de Lula, impugnação cadidatura Lula, tentativa homicídio Bolsonaro, Anúncio Haddad, ...) e resultado final do primeiro turno._  
+Discussão: _Devemos usar pesquisas para prever o resultados das eleições?_
+
+__Proposta 2__  
+Tema: _Web scrapping_  
+Descrição: _Gráficos com resultados de pesquisa (ou nuvens de palavras) com dados de paginas de redes sociais..._   
+Discussão: _Como utilizar pesquisas em redes sociais como termômetro da intenção de votos da população?_ 
+<!-- (Prof. william Barros da UFPel lançou uma enquete em sua página, como melhorar as estimativas obtidas nesse caso?) -->
+
+__Proposta 3__  
+Tema: _Visualização com dados de área_  
+Descrição: _Mapas de variáveis sócio-econômicas, demográficas e percentuais de votos obtidos na eleição._  
+Discussão: _Quais informações dos eleitores podem ser importantes para explicar os percentuais de votos obtidos no primeiro turno?_  
+<!-- (variaveis individuais e de contexto?)  -->
+
+__Proposta 4__  
+Tema: _Online predictions_  
+Descrição: _Aplicativo para coleta de informações e visualização de resultados em tempo real._  
+Discussão: _Pooling in real time?_  
+
+&nbsp;
+
+
+Veja abaixo alguns exemplos de visualização de dados eleitorais através do software R:
+
+* Gráficos Nova Zelândia 2017 - [Free range statistics blog](http://freerangestats.info/blog/2017/10/07/election-results){target="_blank"}
+
+* Gráficos Austrália 2016 - [Rob J. Hyndman blog](https://robjhyndman.com/hyndsight/eechidna/){target="_blank"}
+
+* Combinação de Pesquisas no Brasil - [Poolingdata](http://www.pollingdata.com.br/){target="_blank"}
+
+* Mais combinação de Pesquisas no Brasil - [Agregador JOTA de pesquisas eleitorais](https://data.jota.info/agregador/){target="_blank"}
+
+* Ainda mais combinação no Brasil - [Agregador de Pesquisas Poder 360](https://www.poder360.com.br/pesquisas-de-opiniao/){target="_blank"}
+
+* Pacote R para obtenção de dados do TSE - [Pacote pesqEle](http://curso-r.com/blog/2018/05/30/2018-05-30-pesqele/){target="_blank"}  ([artigo](https://rpubs.com/conre3/pesqEle){target="_blank"})
+
+&nbsp;
+
+Matérias em jornais:
+
+* [Matéria na Zero Hora sobre Apps eleitorais](https://gauchazh.clicrbs.com.br/politica/eleicoes/noticia/2018/09/sites-e-apps-ajudam-na-escolha-dos-candidatos-cjlwlh2oy023w01mnp1sn1n53.html){target="_blank"}
+
+* [NYTimes real time pooling](https://www.nytimes.com/interactive/2018/upshot/elections-polls.html?rref=collection%2Fsectioncollection%2Fupshot&action=click&contentCollection=upshot&region=rank&module=package&version=highlights&contentPlacement=4&pgtype=sectionfront){target="_blank"}

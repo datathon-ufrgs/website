@@ -1,0 +1,34 @@
+---
+title: "Datathon UFRGS 2018"
+subtitle: "Proposta de Análise: Qual o título da minha proposta???"
+author: "Qual o nome da minha equipe???"
+date: "15 de Outubro de 2018"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1. Breve descrição do problema  
+Resumo da descrição da proposta de análise e os dados eleitorais a serem utilizados.
+
+## 2.  Especificação dos objetivos da proposta.  
+Detalhar os objetivos da análise.  
+  
+## 3. Breve detalhamento da extração dos dados;   
+Descrever a fonte específica e os passos para a obtenção dos dados.
+  
+## 4. Possíveis técnicas estatísticas empregadas na análise dos dados;
+Informar quais os procedimentos estatísticos se pretende aplicar aos dados.
+  
+## 5. Pacotes do R que provavelmente serão utilizados;
+Especificar o software a ser utilizada, se não o _R_. Caso seja utilizado o 
+software _R_, indique quais os pacotes principais a serem explorados. Ex. 
+__ggplot2__, __Rmarkdown__, __shiny__, ...
+  
+## 6. Breve descrição do produto final desejado.
+Quais os resultados esperados? 
+
